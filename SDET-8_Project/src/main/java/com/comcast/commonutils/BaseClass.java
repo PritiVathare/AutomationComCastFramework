@@ -2,8 +2,6 @@ package com.comcast.commonutils;
 
 
 
-import java.sql.SQLException;
-
 import java.util.concurrent.TimeUnit;
 
 

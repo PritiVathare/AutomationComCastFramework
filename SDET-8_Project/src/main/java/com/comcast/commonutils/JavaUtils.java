@@ -3,8 +3,8 @@ package com.comcast.commonutils;
 import java.util.Date;
 import java.util.Random;
 /**
- *   This class contains java specific libarraies , which include getSystemData , getRanNumber etc
- * @author Deepak
+ * This class contains java specific libarraies , which include getSystemData , getRanNumber etc
+ * @author santosh - rati
  *
  */
 public class JavaUtils {
@@ -28,3 +28,4 @@ public class JavaUtils {
 	}
 
 }
+

@@ -8,7 +8,7 @@ import java.io.IOException;
 
 
 
-import org.apache.commons.io.FileUtils;
+//import org.apache.commons.io.FileUtils;
 
 import org.openqa.selenium.OutputType;
 
@@ -27,9 +27,7 @@ import org.testng.ITestResult;
 public class ListenerImplemenation implements ITestListener{
 
 	
-@Override
-
-	public void onTestFailure(ITestResult result) {
+public void onTestFailure(ITestResult result) {
 
 		String faildTestNAme = result.getMethod().getMethodName();
 
@@ -43,43 +41,20 @@ public class ListenerImplemenation implements ITestListener{
 
 		
 
-		try {
+		/*try {
 
 			FileUtils.copyFile(srcFile, dstFile);
 
 		} catch (IOException e) {
 
-
-
-		}
-
-		
-
-		
-
-	}
-
-	
-
-	
-
-	
-
-	@Override
-
-	public void onTestStart(ITestResult result) {
+		}*/
+}
+public void onTestStart(ITestResult result) {
 
 		// TODO Auto-generated method stub
 
-		
-
-	}
-
-
-
-	@Override
-
-	public void onTestSuccess(ITestResult result) {
+}
+public void onTestSuccess(ITestResult result) {
 
 		// TODO Auto-generated method stub
 
@@ -92,8 +67,6 @@ public class ListenerImplemenation implements ITestListener{
 
 
 
-
-	@Override
 
 	public void onTestSkipped(ITestResult result) {
 
@@ -105,8 +78,6 @@ public class ListenerImplemenation implements ITestListener{
 
 
 
-	@Override
-
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 
 		// TODO Auto-generated method stub
@@ -117,8 +88,6 @@ public class ListenerImplemenation implements ITestListener{
 
 
 
-	@Override
-
 	public void onStart(ITestContext context) {
 
 		// TODO Auto-generated method stub
@@ -128,8 +97,6 @@ public class ListenerImplemenation implements ITestListener{
 	}
 
 
-
-	@Override
 
 	public void onFinish(ITestContext context) {
 

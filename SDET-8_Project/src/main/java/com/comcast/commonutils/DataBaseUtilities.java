@@ -14,24 +14,10 @@ import java.sql.SQLException;
 
 import com.mysql.cj.jdbc.Driver;
 
-
-
-
-
-
-
-
-
-
-
 /**
-
  * 
-
- * @author Anusha
-
+ * @author santosh - rati
  *
-
  */
 
 public class DataBaseUtilities {
@@ -40,11 +26,7 @@ public class DataBaseUtilities {
 
 	static ResultSet result = null;
 
-
-
-	
-
-	public static void connectToDB() {
+    public static void connectToDB() {
 
 		Driver driverRef;
 
@@ -130,23 +112,12 @@ public class DataBaseUtilities {
 
 		return result;
 
-		
-
 	}
-
-	
-
-
-
-	
-
 	public static  String executeQueryAndGetData(String query ,int columnName , String expectedData) throws Throwable{
 
          boolean flag = false;
 
 			result = con.createStatement().executeQuery(query);
-
-			
 
 		while (result.next()) {
 
@@ -160,11 +131,7 @@ public class DataBaseUtilities {
 
 		}
 
-			
-
-		
-
-		if(flag) {
+			if(flag) {
 
 			System.out.println(expectedData + "===> data verified in data base table");
 
@@ -177,16 +144,8 @@ public class DataBaseUtilities {
 			return expectedData;
 
 		}
-
-		
-
-		
-
-	}
-
-	
-
-	public ResultSet connectToDb(String url , String username , String PAssword) {
+		}
+		public ResultSet connectToDb(String url , String username , String PAssword) {
 
 		//steps  : 1, 2, 3, 4, 5
 

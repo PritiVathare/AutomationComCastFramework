@@ -11,13 +11,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.mysql.cj.jdbc.Driver;
-
-import bsh.commands.dir;
-
 /**
- * This class contains webDriver specific libarraies , which used to handle DropdWon , Popups . wait statmnet , action
- * @author Deepak
+ *   This class contains webDriver specific libarraies , which used to handle DropdWon , Popups . wait statmnet , action
+
+ * @author santosh - rati
  *
  */
 public class WebDriverUTils {
@@ -31,7 +28,8 @@ public class WebDriverUTils {
 		sel.selectByVisibleText(data);
 	}
 	
-	/**
+	/**   
+
 	 *  used to select the value from the dropDwon based on index
 	 * @param element
 	 * @param data
